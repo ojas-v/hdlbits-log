@@ -21,7 +21,7 @@ As I progress through the 150+ problems, I adhere to the following architectural
 The repository is organized chronologically matching the HDLBits curriculum to track the progression from basic boolean logic to complex finite state machines (FSMs) and custom data paths.
 
 * 📁 **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures. *(Completed)*
-* 📁 **`02_Vectors/`**  - Multi-bit data routing, byte swapping, and vector concatenation.
+* 📁 **`02_Vectors/`**  - Multi-bit data routing, byte swapping, and vector concatenation. *(Completed)*
 * 📁 **`03_Modules/`** - *[In Progress]* Hierarchical design, port mapping, and structural instantiation.
 * 📁 **`04_Procedures/`** - Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`).
 * 📁 **`05_More_Verilog_Features/`** - Generate blocks, reduction operators, and combinational loops.
