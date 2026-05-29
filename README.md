@@ -23,8 +23,8 @@ The repository is organized chronologically matching the HDLBits curriculum to t
 * 📁 **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures. *(Completed)*
 * 📁 **`02_Vectors/`**  - Multi-bit data routing, byte swapping, and vector concatenation. *(Completed)*
 * 📁 **`03_Modules/`** - Hierarchical design, port mapping, and structural instantiation. *(Completed)*
-* 📁 **`04_Procedures/`** - *[In Progress]* Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`).
-* 📁 **`05_More_Verilog_Features/`** - Generate blocks, reduction operators, and combinational loops.
+* 📁 **`04_Procedures/`** - Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`). *(Completed)*
+* 📁 **`05_More_Verilog_Features/`** - *[In Progress]*  Generate blocks, reduction operators, and combinational loops.
 * 📁 **`06_Circuits/`** - Complex combinational logic (ALUs, Karnaugh maps) and sequential logic (Latches, Flip-Flops, Shift Registers, Counters, FSMs).
 
 *(Note: Directories will be populated as modules are completed and verified.)*
