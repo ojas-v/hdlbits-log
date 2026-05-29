@@ -20,6 +20,34 @@ end
 This style of code ensures the outputs are assigned a value (of 0) in all possible cases unless the case statement overrides the assignment. This also means that a default: case item becomes unnecessary.
 
 Reminder: The logic synthesizer generates a combinational circuit that behaves equivalently to what the code describes. Hardware does not "execute" the lines of code in sequence.
-
-
 */
+
+`default_nettype none
+module top_module (
+    input wire [15:0] scancode,
+    output reg left,
+    output reg down,
+    output reg right,
+    output reg up  
+);
+
+    always @(*) begin
+        // 1. Establish the default state (all keys unpressed)
+        // This guarantees no latches are inferred.
+        left  = 1'b0;
+        down  = 1'b0;
+        right = 1'b0;
+        up    = 1'b0;
+        
+        // 2. Override the specific wire if a valid scancode is detected
+        case (scancode)
+            16'he06b: left  = 1'b1;
+            16'he072: down  = 1'b1;
+            16'he074: right = 1'b1;
+            16'he075: up    = 1'b1;
+            // No default case is strictly necessary here because 
+            // the baseline state is already established at the top!
+        endcase
+    end
+
+endmodule
