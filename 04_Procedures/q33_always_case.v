@@ -39,7 +39,6 @@ module top_module (
             3'd3: out = data3;
             3'd4: out = data4;
             3'd5: out = data5;
-            
             default: out = 4'b0000; 
         endcase
     end
