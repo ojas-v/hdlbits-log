@@ -18,21 +18,21 @@ As I progress through the 150+ problems, I adhere to the following architectural
 
 ## 📂 Repository Structure
 
-The repository is organized chronologically matching the HDLBits curriculum to track the progression from basic boolean logic to complex finite state machines (FSMs) and custom data paths.
+The repository is organized into two primary domains, reflecting the transition from fundamental language mechanics to physical hardware implementation.
 
-* 📁 **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures. *(Completed)*
-* 📁 **`02_Vectors/`**  - Multi-bit data routing, byte swapping, and vector concatenation. *(Completed)*
-* 📁 **`03_Modules/`** - Hierarchical design, port mapping, and structural instantiation. *(Completed)*
-* 📁 **`04_Procedures/`** - Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`). *(Completed)*
-* 📁 **`05_More_Verilog_Features/`** - *[In Progress]*  Generate blocks, reduction operators, and combinational loops.
-* 📁 **`06_Circuits/`** - Complex combinational logic (ALUs, Karnaugh maps) and sequential logic (Latches, Flip-Flops, Shift Registers, Counters, FSMs).
+### 📁 `Verilog_Language/` *(Completed)*
+* **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures.
+* **`02_Vectors/`** - Multi-bit data routing, byte swapping, and vector concatenation.
+* **`03_Modules/`** - Hierarchical design, port mapping, and structural instantiation.
+* **`04_Procedures/`** - Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`).
+* **`05_More_Verilog_Features/`** - Parameterized module instantiation (`generate` blocks), reduction operators, and combinational `for` loops.
 
-*(Note: Directories will be populated as modules are completed and verified.)*
+### 📁 `Circuits/` *(In Progress)*
+* **Combinational Logic:** Multiplexers, arithmetic circuits (ALUs), and Karnaugh map minimization.
+* **Sequential Logic:** Latches, Flip-Flops, Shift Registers, Counters, and Finite State Machines (FSMs).
+* **Advanced Datapaths:** Custom hardware routing and specialized state control.
 
 ---
 
 ### Author
-**Ojas Vaidya**  
-*B.Tech + M.Tech, Electronics and Communication Engineering*  
-*IIITDM Kancheepuram*  
-Focused on digital logic design, VLSI, and computer architecture.
+**Ojas Vaidya** *B.Tech + M.Tech, Electronics and Communication Engineering* *IIITDM Kancheepuram* Focused on digital logic design, VLSI, and computer architecture.
