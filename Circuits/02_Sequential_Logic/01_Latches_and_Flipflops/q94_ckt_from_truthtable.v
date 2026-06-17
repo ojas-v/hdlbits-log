@@ -24,13 +24,12 @@ endmodule
 
 /*
 CAN ALSO BE IMPLEMENTED USING THIS CODE:
-`default_nettype none
 
 module top_module (
     input wire clk,
     input wire j,
     input wire k,
-    output reg Q    // MUST be a reg!
+    output reg Q    
 ); 
 
     always @(posedge clk) begin
