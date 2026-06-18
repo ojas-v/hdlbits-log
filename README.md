@@ -8,7 +8,7 @@ This repository serves as a comprehensive, version-controlled log of my RTL desi
 
 The objective of this repository is not merely to pass simulation testbenches, but to systematically develop industry-standard hardware description skills. Every module is written with a strict focus on physical gate mapping, synthesizability, and avoiding common software-centric Verilog pitfalls.
 
-## 🧠 Core Design Philosophy
+## Core Design Philosophy
 
 As I progress through the 150+ problems, I adhere to the following architectural standards:
 - **Hardware-First Mindset:** Verilog is not C. I design the mental block diagram and combinational/sequential logic paths before writing syntax.
@@ -16,23 +16,45 @@ As I progress through the 150+ problems, I adhere to the following architectural
 - **Strict Net Typing:** Enforcing `` `default_nettype none `` to prevent the compiler from silently inferring disconnected wires, ensuring structural integrity as designs scale.
 - **Clean Latch Prevention:** Ensuring all conditional branches in combinational `always` blocks are fully defined.
 
-## 📂 Repository Structure
+## 📂 Repository Structure & Progress Tracker
 
-The repository is organized into two primary domains, reflecting the transition from fundamental language mechanics to physical hardware implementation.
+The repository is mapped directly to the HDLBits curriculum, reflecting the transition from fundamental language mechanics to physical hardware implementation.
 
 ### 📁 `Verilog_Language/` *(Completed)*
-* **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures.
-* **`02_Vectors/`** - Multi-bit data routing, byte swapping, and vector concatenation.
-* **`03_Modules/`** - Hierarchical design, port mapping, and structural instantiation.
-* **`04_Procedures/`** - Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`).
-* **`05_More_Verilog_Features/`** - Parameterized module instantiation (`generate` blocks), reduction operators, and combinational `for` loops.
+- [x] **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures.
+- [x] **`02_Vectors/`** - Multi-bit data routing, byte swapping, and vector concatenation.
+- [x] **`03_Modules/`** - Hierarchical design, port mapping, and structural instantiation.
+- [x] **`04_Procedures/`** - Combinational and sequential `always` blocks, blocking vs. non-blocking assignments (`=` vs `<=`).
+- [x] **`05_More_Verilog_Features/`** - Parameterized module instantiation (`generate` blocks), reduction operators, and combinational `for` loops.
 
 ### 📁 `Circuits/` *(In Progress)*
-* **Combinational Logic:** Multiplexers, arithmetic circuits (ALUs), and Karnaugh map minimization.
-* **Sequential Logic:** Latches, Flip-Flops, Shift Registers, Counters, and Finite State Machines (FSMs).
-* **Advanced Datapaths:** Custom hardware routing and specialized state control.
+
+#### 📁 `01_Combinational_Logic/` *(Completed)*
+- [x] **Basic Gates** - Complex boolean routing and logic simplification.
+- [x] **Multiplexers** - Selectors and data path routing.
+- [x] **Arithmetic Circuits** - Half/Full adders, ripple-carry architectures, and BCD addition.
+- [x] **Karnaugh Map to Circuit** - Boolean minimization, SOP/POS forms, and Don't Care optimizations.
+
+#### 📁 `02_Sequential_Logic/` *(In Progress)*
+- [x] **`01_Latches_and_Flipflops/`** - Edge-triggered state capture, synchronous/asynchronous resets, and edge detection.
+- [ ] **Counters** - *Not Started*
+- [ ] **Shift Registers** - *Not Started*
+- [ ] **More Circuits** - *Not Started*
+- [ ] **Finite State Machines (FSMs)** - *Not Started*
+
+#### 📁 `Building_Larger_Circuits/` *(Not Started)*
+- [ ] *Pending*
+
+### 📁 `Verification/` *(Not Started)*
+- [ ] **Reading Simulations** - *Not Started*
+- [ ] **Writing Testbenches** - *Not Started*
 
 ---
 
 ### Author
-**Ojas Vaidya** *B.Tech + M.Tech, Electronics and Communication Engineering* *IIITDM Kancheepuram* Focused on digital logic design, VLSI, and computer architecture.
+**Ojas Vaidya** 
+
+*B.Tech + M.Tech, Electronics and Communication Engineering* 
+*Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Kancheepuram* 
+
+Focused on digital logic design, VLSI, embedded systems, and computer architecture.
