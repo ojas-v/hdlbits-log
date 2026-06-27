@@ -37,10 +37,10 @@ The repository is mapped directly to the HDLBits curriculum, reflecting the tran
 
 #### 📁 `02_Sequential_Logic/` *(In Progress)*
 - [x] **`01_Latches_and_Flipflops/`** - Edge-triggered state capture, synchronous/asynchronous resets, and edge detection.
-- [ ] **Counters** - *Not Started*
-- [ ] **Shift Registers** - *Not Started*
-- [ ] **More Circuits** - *Not Started*
-- [ ] **Finite State Machines (FSMs)** - *Not Started*
+- [x] **Counters** 
+- [x] **Shift Registers** 
+- [x] **More Circuits** 
+- [ ] **Finite State Machines (FSMs)** - *Started*
 
 #### 📁 `Building_Larger_Circuits/` *(Not Started)*
 - [ ] *Pending*
