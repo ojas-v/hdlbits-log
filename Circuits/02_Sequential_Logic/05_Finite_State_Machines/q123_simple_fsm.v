@@ -1,0 +1,28 @@
+module top_module(
+    input wire in,
+    input wire [1:0] state,
+    output reg [1:0] next_state,
+    output wire out
+);
+
+    // State Encoding
+    parameter A=2'b00, B=2'b01, C=2'b10, D=2'b11;
+
+    // Next-State Logic 
+    always @(*) begin
+        case (state)
+            A: next_state = in ? B : A;
+            B: next_state = in ? B : C;
+            C: next_state = in ? D : A;
+            D: next_state = in ? B : C;
+            
+            // ALWAYS include a default case to prevent inferred latches!
+            default: next_state = A; 
+        endcase
+    end
+
+    // Output Logic
+    // Moore machine: The output is a 1 ONLY when the current state is D.
+    assign out = (state == D);
+
+endmodule
