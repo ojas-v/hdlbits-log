@@ -21,6 +21,7 @@ module top_module (
         case(state)
             A: next_state = s ? B : A;
             B: next_state = B; // Once in B, stay in B indefinitely
+            default: next_state = A; // safe default for synthesis
         endcase
     end
     
@@ -55,11 +56,11 @@ module top_module (
                 if (cycle == 2'd0)
                     ones <= {1'b0, w};    // Start fresh for the new block
                 else
-                    ones <= ones + w;     // Add current bit to the running total
+                    ones <= ones + {1'b0, w};     // Add current bit to the running total
                     
                 // C) Evaluate the block on its final tick
                 if (cycle == 2'd2) begin
-                    if (ones + w == 2'd2) // Add the final incoming bit to the sum
+                    if (ones + {1'b0, w} == 2'd2) // Add the final incoming bit to the sum
                         z_reg <= 1'b1;
                     else
                         z_reg <= 1'b0;
