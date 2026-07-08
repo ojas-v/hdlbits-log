@@ -14,10 +14,10 @@ x=0	x=1
 
 
 module top_module (
-    input wire clk,
-    input wire reset,   // Asynchronous reset
-    input wire x,
-    output wire z
+    input clk,
+    input reset,   // Synchronous reset
+    input x,
+    output z
 );
 
     // State Encoding
@@ -29,7 +29,7 @@ module top_module (
 
     reg [2:0] state, next_state;
 
-    // Next-State Logic (Purely Combinational)
+    // Next-State Logic (Combinational)
     always @(*) begin
         case (state)
             S0: next_state = x ? S1 : S0;
@@ -37,12 +37,12 @@ module top_module (
             S2: next_state = x ? S1 : S2;
             S3: next_state = x ? S2 : S1;
             S4: next_state = x ? S4 : S3;
-            default: next_state = S0;
+            default: next_state = S0; // Catch-all for illegal states
         endcase
     end
 
-    // State Memory (Asynchronous Active-High Reset)
-    always @(posedge clk or posedge reset) begin
+    // State Memory (Strictly Synchronous Reset)
+    always @(posedge clk) begin
         if (reset) begin
             state <= S0;
         end else begin
