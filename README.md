@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-Verilog-blue.svg)
 ![Focus](https://img.shields.io/badge/Focus-Synthesizable%20RTL-success.svg)
-![Progress](https://img.shields.io/badge/Progress-Ongoing-orange.svg)
+![Progress](https://img.shields.io/badge/Progress-Completed-success.svg)
 
 This repository serves as a comprehensive, version-controlled log of my RTL design solutions for the [HDLBits](https://hdlbits.01xz.net/) problem set. 
 
@@ -19,7 +19,7 @@ As I progress through the curriculum, I adhere to the following architectural st
 
 ## 📂 Repository Structure & Progress Tracker
 
-The repository is mapped directly to the HDLBits curriculum, reflecting the transition from fundamental language mechanics to physical hardware implementation.
+The repository is mapped directly to the HDLBits curriculum, reflecting the transition from fundamental language mechanics to physical hardware implementation. 
 
 ### 📁 `Verilog_Language/` *(Completed)*
 - [x] **`01_Basics/`** - Fundamental routing, standard CMOS gate implementations (NOT, AND, NOR, XNOR), and AOI structures.
@@ -46,12 +46,17 @@ The repository is mapped directly to the HDLBits curriculum, reflecting the tran
 #### 📁 `03_Building_Larger_Circuits/` *(Completed)*
 - [x] **Complex System Integration** - Combining sequence recognizers, shift registers, and modulo-1000 timers into cohesive industrial-style FSMD controllers.
 
-### 📁 `Verification/` *(In Progress)*
-- [x] **`01_Finding_Bugs_in_code/`** - *Currently Active* (Analyzing RTL bugs, debugging simulation mismatches, and fixing combinational/sequential logic errors).
-- [ ] **Build a circuit from a simulation waveform** - *Not Started*
-- [ ] **Writing Testbenches** - *Not Started*
+### 📁 `Verification/` *(Completed)*
+- [x] **`01_Finding_Bugs_in_code/`** - Analyzing RTL bugs, debugging simulation mismatches, and fixing combinational/sequential logic errors.
+- [x] **`02_Reading_Simulations/`** - Reverse-engineering logic circuits purely from simulation waveforms and deriving state logic.
+- [x] **`03_Writing_Testbenches/`** - Generating clock stimuli, instantiating DUTs, and creating specific sequential input waveforms for functional verification.
+
+*(Note: The CS450 course-specific module is excluded from this portfolio as the core HDLBits curriculum is officially completed).*
 
 ---
 
 ### Author
-**Ojas Vilas Vaidya** *B.Tech + M.Tech, Electronics and Communication Engineering* *Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Kancheepuram* Focused on digital logic design, VLSI, embedded systems, and computer architecture.
+**Ojas Vaidya**  
+*B.Tech + M.Tech, Electronics and Communication Engineering*  
+*Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Kancheepuram*  
+Focused on digital logic design, VLSI, embedded systems, and computer architecture.
